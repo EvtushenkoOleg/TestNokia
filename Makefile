@@ -1,5 +1,6 @@
 nameProg=testNokia
 nameExe=$(nameProg).exe
+dirTests=tests
 nameTests=test_default.csv test_true.csv test_notCorrectNameCell.csv test_notCorrectTable.csv test_divZero.csv
 
 .PHONY: all clean test
@@ -10,5 +11,5 @@ clean:
 	rm -rf *.exe
 test:
 	for testIndex in $(nameTests) ; do \
-		./$(nameExe) $$testIndex ; \
+		./$(nameExe) $(dirTests)/$$testIndex ; \
 	done
