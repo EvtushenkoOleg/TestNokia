@@ -1,6 +1,6 @@
 nameProg=testNokia
 nameExe=$(nameProg).exe
-nameTests=test1.csv
+nameTests=test_default.csv test_true.csv test_notCorrectNameCell.csv test_notCorrectTable.csv test_divZero.csv
 
 .PHONY: all clean test
 
