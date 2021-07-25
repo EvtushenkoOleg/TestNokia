@@ -2,11 +2,12 @@ nameProg=testNokia
 nameExe=$(nameProg).exe
 dirTests=tests
 nameTests=test_default.csv test_true.csv test_notCorrectNameCell.csv test_notCorrectTable.csv test_divZero.csv
+SOURCES=testNokia.cpp printValues.cpp calc.cpp calculateCell.cpp getValue.cpp
 
 .PHONY: all clean test
 
 all:
-	g++ -o $(nameExe) $(nameProg).cpp
+	g++ -o $(nameExe) $(SOURCES)
 clean:
 	rm -rf *.exe
 test:

@@ -1,4 +1,7 @@
-#include "headersCalculate.h"
+#include <iostream>
+#include <string>
+#include <vector>
+#include <regex>
 #include "getValue.h"
 
 using namespace std;
