@@ -1,0 +1,16 @@
+nameExe=testNokia.exe
+dirTests=tests
+SOURCES=testNokia.cpp printValues.cpp calc.cpp calculateCell.cpp getValue.cpp
+
+.PHONY: all clean test
+
+all:
+	g++ -o $(nameExe) $(SOURCES)
+clean:
+	rm -rf *.exe
+test:
+	$(nameExe) $(dirTests)\test_default.csv
+	$(nameExe) $(dirTests)\test_true.csv
+	$(nameExe) $(dirTests)\test_notCorrectNameCell.csv
+	$(nameExe) $(dirTests)\test_notCorrectTable.csv
+	$(nameExe) $(dirTests)\test_divZero.csv
