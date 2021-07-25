@@ -1,0 +1,1 @@
+bool calculateCell(std::string cell, std::vector<std::string> vColumn, std::vector<std::string> vRow, std::string* values, int countRow, int i, int j);

@@ -1,0 +1,1 @@
+void printValues(std::string* values, int countRow, int countColumn, std::vector<std::string> vRow, std::vector<std::string> vColumn);//функция для печати таблицы

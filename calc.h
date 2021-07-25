@@ -1,0 +1,1 @@
+bool calc(std::string* values, int countRow, int countColumn, std::vector<std::string> vRow, std::vector<std::string> vColumn);//функция для вычисления значений в таблице, возвращает true/false - успешно или нет
